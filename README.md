@@ -1,4 +1,4 @@
-# Asan Abai Student API Documentation
+# Asan Abai Student API Midterm Project
 
 Spring Boot CRUD API for the DevOps midterm. The API stores students in PostgreSQL and is designed to run locally with Docker Compose.
 
