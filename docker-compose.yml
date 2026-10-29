@@ -1,12 +1,12 @@
-name: asan-abai-student-api
+name: dias-kuzhakhmetov-student-api
 
 services:
   app:
     build:
       context: .
       dockerfile: Dockerfile
-    image: asan-abai-student-api:v1.0-asan-abai
-    container_name: asan-abai-student-api
+    image: dias-kuzhakhmetov-student-api:v1.0-dias-kuzhakhmetov
+    container_name: dias-kuzhakhmetov-student-api
     ports:
       - "8080:8080"
     environment:
@@ -22,7 +22,7 @@ services:
 
   postgres:
     image: postgres:16-alpine
-    container_name: asan-abai-postgres
+    container_name: dias-kuzhakhmetov-postgres
     environment:
       POSTGRES_DB: studentdb
       POSTGRES_USER: student

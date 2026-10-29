@@ -1,13 +1,13 @@
-# Asan Abai Student API Midterm Project
+# Dias Kuzhakhmetov Student API Midterm Project
 
 Spring Boot CRUD API for the DevOps midterm. The API stores students in PostgreSQL and is designed to run locally with Docker Compose.
 
 ## Personal details
 
-- Student: Asan Abai
-- Repository: `asan-abai-student-api`
-- Image: `asan-abai-student-api:v1.0-asan-abai`
-- Jenkins job: `Asan_Abai_Student_API`
+- Student: Dias Kuzhakhmetov
+- Repository: `dias-kuzhakhmetov-student-api`
+- Image: `dias-kuzhakhmetov-student-api:v1.0-dias-kuzhakhmetov`
+- Jenkins job: `Dias_Kuzhakhmetov_Student_API`
 
 ## API endpoints
 
@@ -31,12 +31,12 @@ Example CRUD demonstration:
 ```bash
 curl -i -X POST http://localhost:8080/api/students \
   -H 'Content-Type: application/json' \
-  -d '{"fullName":"Asan Abai","email":"asan.abai@example.com"}'
+  -d '{"fullName":"Dias Kuzhakhmetov","email":"dias.kuzhakhmetov@example.com"}'
 curl -i http://localhost:8080/api/students
 curl -i http://localhost:8080/api/students/1
 curl -i -X PUT http://localhost:8080/api/students/1 \
   -H 'Content-Type: application/json' \
-  -d '{"fullName":"Asan Abai Updated","email":"asan.updated@example.com"}'
+  -d '{"fullName":"Dias Kuzhakhmetov Updated","email":"dias.updated@example.com"}'
 curl -i -X DELETE http://localhost:8080/api/students/1
 curl -i http://localhost:8080/api/students/999
 ```
@@ -46,10 +46,10 @@ curl -i http://localhost:8080/api/students/999
 ## Linux evidence
 
 ```bash
-./scripts/Asan_Abai_system_report.sh
-ls -l scripts/Asan_Abai_system_report.sh backups/README_Asan_Abai.bak
+./scripts/Dias_Kuzhakhmetov_system_report.sh
+ls -l scripts/Dias_Kuzhakhmetov_system_report.sh backups/README_Dias_Kuzhakhmetov.bak
 ps aux | grep '[j]ava' || true
-./scripts/Asan_Abai_log_analysis.sh
+./scripts/Dias_Kuzhakhmetov_log_analysis.sh
 ```
 
 In Linux, `>` replaces a file's contents, while `>>` appends content to the end of the file.
@@ -59,7 +59,7 @@ In Linux, `>` replaces a file's contents, while `>>` appends content to the end 
 ```bash
 docker compose ps
 docker compose logs app
-docker inspect asan-abai-student-api
+docker inspect dias-kuzhakhmetov-student-api
 docker compose exec app sh
 docker compose stop app
 docker compose start app
@@ -72,19 +72,19 @@ PostgreSQL data persists because it is stored in the named `postgres-data` volum
 
 ```bash
 git init
-git config user.name 'Asan Abai'
-git config user.email 'asan.abai@example.com'
+git config user.name 'Dias Kuzhakhmetov'
+git config user.email 'dias.kuzhakhmetov@example.com'
 git add .
-git commit -m 'Initial commit: Asan Abai Student API'
-git switch -c feature/asan-abai-crud
+git commit -m 'Initial commit: Dias Kuzhakhmetov Student API'
+git switch -c feature/dias-kuzhakhmetov-crud
 # make CRUD changes
-git add . && git commit -m 'Add Asan Abai student CRUD endpoint'
-git add README.md && git commit -m 'Document Asan Abai API testing'
-git switch main && git merge --no-ff feature/asan-abai-crud
-git switch -c feature/asan-abai-documentation
+git add . && git commit -m 'Add Dias Kuzhakhmetov student CRUD endpoint'
+git add README.md && git commit -m 'Document Dias Kuzhakhmetov API testing'
+git switch main && git merge --no-ff feature/dias-kuzhakhmetov-crud
+git switch -c feature/dias-kuzhakhmetov-documentation
 # resolve a deliberately created README conflict manually, then commit
-git tag v1.0-asan-abai
-git remote add origin https://github.com/YOUR_USERNAME/asan-abai-student-api.git
+git tag v1.0-dias-kuzhakhmetov
+git remote add origin https://github.com/YOUR_USERNAME/dias-kuzhakhmetov-student-api.git
 git push -u origin main --tags
 ```
 

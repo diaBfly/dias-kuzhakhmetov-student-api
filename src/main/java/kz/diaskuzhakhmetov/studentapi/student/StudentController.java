@@ -1,4 +1,4 @@
-package kz.asanabai.studentapi.student;
+package kz.diaskuzhakhmetov.studentapi.student;
 
 import java.util.List;
 import org.springframework.http.HttpStatus;

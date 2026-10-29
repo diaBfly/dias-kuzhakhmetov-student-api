@@ -1,0 +1,10 @@
+Last five lines of the system report:
+
+Disk usage and available disk space:
+Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s5   228Gi    50Gi   157Gi    25%    405k  1.6G    0%   /System/Volumes/Data
+
+
+Lines containing the surname Kuzhakhmetov:
+1:===== Dias Kuzhakhmetov System Report =====
+2:Student: Dias Kuzhakhmetov

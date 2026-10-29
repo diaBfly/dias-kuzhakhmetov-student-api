@@ -1,4 +1,4 @@
-package kz.asanabai.studentapi.student;
+package kz.diaskuzhakhmetov.studentapi.student;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

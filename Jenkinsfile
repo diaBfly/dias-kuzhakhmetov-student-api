@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'asan-abai-student-api:v1.0-asan-abai'
+        IMAGE_NAME = 'dias-kuzhakhmetov-student-api:v1.0-dias-kuzhakhmetov'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                echo 'Student: Asan Abai'
+                echo 'Student: Dias Kuzhakhmetov'
                 checkout scm
             }
         }
@@ -35,7 +35,7 @@ pipeline {
     }
 
     post {
-        success { echo 'Asan Abai pipeline completed successfully.' }
+        success { echo 'Dias Kuzhakhmetov pipeline completed successfully.' }
         failure { echo 'Pipeline failed. Check the stage log and fix the reported error.' }
     }
 }

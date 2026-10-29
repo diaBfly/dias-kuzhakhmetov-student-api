@@ -2,11 +2,11 @@
 set -euo pipefail
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-LOG_FILE="$PROJECT_DIR/logs/Asan_Abai_system_report.log"
+LOG_FILE="$PROJECT_DIR/logs/Dias_Kuzhakhmetov_system_report.log"
 
 {
-  echo "===== Asan Abai System Report ====="
-  echo "Student: Asan Abai"
+  echo "===== Dias Kuzhakhmetov System Report ====="
+  echo "Student: Dias Kuzhakhmetov"
   echo "Date and time: $(date '+%Y-%m-%d %H:%M:%S %Z')"
   echo "Username: $(whoami)"
   echo "Operating system: $(uname -s)"

@@ -1,4 +1,4 @@
-package kz.asanabai.studentapi.student;
+package kz.diaskuzhakhmetov.studentapi.student;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
