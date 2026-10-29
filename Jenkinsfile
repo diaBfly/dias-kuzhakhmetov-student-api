@@ -14,12 +14,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'chmod +x gradlew && ./gradlew --no-daemon clean bootJar'
+                sh 'mvn -B clean package -DskipTests'
             }
         }
         stage('Test') {
             steps {
-                sh './gradlew --no-daemon test'
+                sh 'mvn -B test'
             }
         }
         stage('Docker Build') {

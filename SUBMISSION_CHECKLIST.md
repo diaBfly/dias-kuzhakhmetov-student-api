@@ -24,7 +24,7 @@
 
 ## Part 4 Jenkins
 
-- [ ] Install/configure JDK 17, Gradle 8.10+, Docker and Git on a Docker-capable Jenkins agent.
+- [ ] Install/configure JDK 17, Maven 3.9+, Docker and Git on a Docker-capable Jenkins agent.
 - [ ] Configure a Pipeline job named `Dias_Kuzhakhmetov_Student_API` pointing to your GitHub repository.
 - [ ] Add repository credentials to Jenkins Credentials if the repository is private.
 - [ ] Run the pipeline, deliberately fail it only on a personal test branch, repair it, and retain both console logs.
